@@ -27,3 +27,5 @@ After you have determined some image you want to mirror, do the following:
 - If not already created, create an issue upstream asking for them to support an additional registry.
 - Open a PR adding a new application to the `apps` folder, update the `README.md` with the issue link, and then update `.github/renovate.json5` to auto merge it.
 - Remind us to make the image public after the PR is merged ;)
+
+this is just to run the action again.
