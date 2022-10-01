@@ -1,0 +1,71 @@
+{
+  "semanticCommits": "enabled",
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "Renovate Dashboard 🤖",
+  "suppressNotifications": ["prIgnoreNotification"],
+  "rebaseWhen": "conflicted",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": "to {{newVersion}}",
+  "commitMessageSuffix": "",
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "enabled": true,
+      "matchUpdateTypes": ["major", "minor", "patch"]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "semanticCommitScope": "images",
+      "separateMinorPatch": true
+    },
+    // add labels according to package and update types
+    {
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["major"],
+      "commitMessagePrefix": "feat(images)!: ",
+      "labels": ["renovate/image", "dep/major"]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["minor"],
+      "semanticCommitType": "feat",
+      "labels": ["renovate/image", "dep/minor"]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["patch"],
+      "semanticCommitType": "fix",
+      "labels": ["renovate/image", "dep/patch"]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-amd64$",
+      "matchPackageNames": ["blakeblackshear/frigate"]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "automerge": true,
+      "automergeType": "branch",
+      "requiredStatusChecks": null,
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchPackageNames": [
+        "docker.io/codercom/code-server",
+        "docker.io/jellyfin/jellyfin",
+        "docker.io/nodered/node-red",
+        "docker.io/esanchezm/prometheus-qbittorrent-exporter",
+        "docker.io/golift/unifi-poller",
+        "docker.io/blakeblackshear/frigate",
+        "docker.io/library/traefik",
+        "docker.io/grafana/grafana",
+        "docker.io/grafana/loki",
+        "docker.io/grafana/promtail",
+        "docker.io/stakater/reloader",
+        "docker.io/library/eclipse-mosquitto",
+        "docker.io/velero/velero",
+        "docker.io/velero/velero-plugin-for-aws",
+        "docker.io/vaultwarden/server",
+        "docker.io/rclone/rclone"
+      ]
+    }
+  ]
+}
