@@ -50,6 +50,7 @@
       "matchUpdateTypes": ["major", "minor", "patch"],
       "matchPackageNames": [
         "docker.io/stakater/reloader",
+        "docker.io/gotson/komga"
       ]
     }
   ]
