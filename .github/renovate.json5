@@ -39,18 +39,14 @@
     },
     {
       "matchDatasources": ["docker"],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-amd64$",
-      "matchPackageNames": ["blakeblackshear/frigate"]
-    },
-    {
-      "matchDatasources": ["docker"],
       "automerge": true,
       "automergeType": "branch",
       "requiredStatusChecks": null,
       "matchUpdateTypes": ["major", "minor", "patch"],
       "matchPackageNames": [
         "docker.io/stakater/reloader",
-        "docker.io/gotson/komga"
+        "docker.io/gotson/komga",
+        "docker.io/renovate/renovate"
       ]
     }
   ]
