@@ -15,7 +15,7 @@ jobs:
           github-token: ${{ secrets.TOKEN }}
           support-label: support
           issue-comment: |
-            :wave: @{issue-author}, we use the issue tracker exclusively for bug reports and feature requests. 
+            :wave: @{issue-author}, we use the issue tracker exclusively for bug reports and feature requests.
             This issue appears to be a support request, please use our support channels to get help:
 
             - [Docs](https://docs.k8s-at-home.com/)
