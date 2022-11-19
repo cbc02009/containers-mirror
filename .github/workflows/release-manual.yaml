@@ -18,7 +18,7 @@ on:
         required: true
 
 env:
-  TOKEN: ${{ secrets.TOKEN }}
+  TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   generate-build-matrix:
