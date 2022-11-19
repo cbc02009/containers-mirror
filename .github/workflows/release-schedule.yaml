@@ -9,7 +9,7 @@ on:
     - cron: "0 */3 * * *"
 
 env:
-  TOKEN: ${{ secrets.TOKEN }}
+  TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   generate-build-matrix:
