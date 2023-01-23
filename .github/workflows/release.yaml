@@ -1,4 +1,4 @@
-name: Release
+name: Build
 
 on:
   workflow_dispatch:
@@ -6,7 +6,18 @@ on:
     branches:
     - main
     paths:
+    - '.github/workflows/release.yaml'
     - 'apps/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'apps/**'
+      - '.github/workflows/release.yaml'
+
+env:
+  # Regstiry where the image is stored
+  IMAGE_REGISTRY: ghcr.io
 
 jobs:
   changes:
