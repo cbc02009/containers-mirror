@@ -40,7 +40,7 @@ jobs:
     - id: reduce
       run: |
         CONTAINERS=$(jq --raw-output '.changed_files | fromjson | .[] |= sub("(?<filepath>(?<first_directory>(?<root1>[/]?)[^/]+/)(?<second_directory>(?<root2>[/]?)[^/]+)(?<extra_paths>.+))"; "\(.second_directory)") | unique' changes.json)
-        echo "containers=${CONTAINERS}" >> $GITHUB_OUTPUT
+        echo ::set-output name=containers::${CONTAINERS}
 
   build:
     name: Build
@@ -60,13 +60,13 @@ jobs:
       id: prep
       run: |
         CATEGORY="apps"
-        echo "category=${CATEGORY}" >> $GITHUB_OUTPUT
+        echo ::set-output name=category::${CATEGORY}
         VERSION=$(head -1 ./${CATEGORY}/${{ matrix.container }}/Dockerfile | sed 's/^FROM.*://' )
         VERSION="${VERSION#*v}"
-        echo "version=${VERSION}" >> $GITHUB_OUTPUT
+        echo ::set-output name=version::${VERSION}
         PLATFORM=$(cat ./${CATEGORY}/${{ matrix.container }}/PLATFORM)
-        echo "platform=${PLATFORM}" >> $GITHUB_OUTPUT
-        echo "push=true" >> $GITHUB_OUTPUT
+        echo ::set-output name=platform::${PLATFORM}
+        echo ::set-output name=push::true
 
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
