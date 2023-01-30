@@ -9,7 +9,7 @@
   ],
   "platform": "github",
   "username": "mahoro-bot[bot]",
-  "repositories": ["cbc02009/k8s-home-ops"],
+  "repositories": ["cbc02009/container-images"],
   "onboarding": false,
   "requireConfig": "optional",
   "gitAuthor": "mahoro-bot <115426318+mahoro-bot[bot]@users.noreply.github.com>",
