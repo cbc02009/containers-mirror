@@ -22,8 +22,8 @@ env:
 jobs:
   changes:
     name: Get changes
-    # runs-on: [self-hosted, linux]
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux]
+    # runs-on: ubuntu-latest
     outputs:
       matrix: "{\"container\": ${{ steps.reduce.outputs.containers }} }"
     steps:
@@ -44,8 +44,8 @@ jobs:
 
   build:
     name: Build
-    # runs-on: [self-hosted, linux]
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux]
+    # runs-on: ubuntu-latest
     needs:
     - changes
     strategy:
