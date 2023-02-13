@@ -43,7 +43,7 @@ jobs:
         echo "containers=${CONTAINERS}" >> $GITHUB_OUTPUT
     - id: print
       run: |
-        echo "changed files: {{ steps.reduce.outputs.containers}}"
+        echo "changed files: ${{ steps.reduce.outputs.containers }}"
 
   build:
     name: Build
