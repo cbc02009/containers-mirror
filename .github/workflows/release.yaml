@@ -41,6 +41,9 @@ jobs:
       run: |
         CONTAINERS=$(jq --raw-output '.changed_files | fromjson | .[] |= sub("(?<filepath>(?<first_directory>(?<root1>[/]?)[^/]+/)(?<second_directory>(?<root2>[/]?)[^/]+)(?<extra_paths>.+))"; "\(.second_directory)") | unique' changes.json)
         echo "containers=${CONTAINERS}" >> $GITHUB_OUTPUT
+    - id: print
+      run: |
+        echo "changed files: {{ steps.reduce.outputs.containers}}"
 
   build:
     name: Build
