@@ -1,1 +1,1 @@
-FROM docker.io/gotson/komga:0.161.0
+FROM docker.io/teddit/teddit:latest
