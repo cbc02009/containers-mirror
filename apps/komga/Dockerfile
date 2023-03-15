@@ -1,1 +1,1 @@
-FROM docker.io/teddit/teddit:lateset@sha256:99ad3e5d377675dc7a5d92527f7738a3097ebbf25b83ecbc6f3f6d4c32e40277
+FROM docker.io/gotson/komga:0.164.0@sha256:db1fc93bddd7299d3e865d632c1231609b71465a4d5377297397ffe0a2ca3344
