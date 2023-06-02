@@ -1,1 +1,1 @@
-FROM docker.io/cloudflare/cloudflared:2023.5.1
+FROM docker.io/restic/restic:0.14.0
