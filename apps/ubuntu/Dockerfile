@@ -1,1 +1,1 @@
-FROM docker.io/ubuntu:22.10
+FROM docker.io/ubuntu:23.10
