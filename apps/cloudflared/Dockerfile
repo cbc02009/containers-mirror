@@ -1,1 +1,1 @@
-FROM docker.io/cloudflare/cloudflared:2023.8.2
+FROM docker.io/cloudflare/cloudflared:2023.10.0
