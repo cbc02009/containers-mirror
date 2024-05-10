@@ -1,1 +1,1 @@
-FROM docker.io/linuxserver/babybuddy:2.3.1
+FROM docker.io/linuxserver/babybuddy:2.4.0
