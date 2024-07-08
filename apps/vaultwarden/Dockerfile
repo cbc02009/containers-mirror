@@ -1,1 +1,1 @@
-FROM docker.io/vaultwarden/server:1.30.5
+FROM docker.io/vaultwarden/server:1.31.0
