@@ -1,1 +1,1 @@
-FROM docker.io/timberio/vector:0.41.1-debian
+FROM docker.io/timberio/vector:0.42.0-debian
