@@ -1,1 +1,1 @@
-FROM docker.io/restic/restic:0.17.2
+FROM docker.io/restic/restic:0.17.3
