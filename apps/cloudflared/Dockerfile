@@ -1,1 +1,1 @@
-FROM docker.io/cloudflare/cloudflared:2024.11.0
+FROM docker.io/cloudflare/cloudflared:2024.11.1
