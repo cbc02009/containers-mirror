@@ -1,1 +1,1 @@
-FROM docker.io/difegue/lanraragi:v0.9.31
+FROM docker.io/difegue/lanraragi:v0.9.31@sha256:236f4794345f484c6bd96c83ebae4f1ef9492b9727c835155f7fa9ec85b67018
