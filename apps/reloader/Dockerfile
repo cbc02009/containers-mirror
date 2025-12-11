@@ -1,1 +1,1 @@
-FROM docker.io/stakater/reloader:v1.4.10
+FROM docker.io/stakater/reloader:v1.4.11
