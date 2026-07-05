@@ -1,1 +1,1 @@
-FROM docker.io/nroi/flexo:1.6.12
+FROM docker.io/nroi/flexo:1.6.13
