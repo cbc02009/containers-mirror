@@ -1,1 +1,1 @@
-FROM docker.io/qmcgaw/gluetun:v3.41.2
+FROM docker.io/qmcgaw/gluetun:v3.41.3
