@@ -1,1 +1,1 @@
-FROM docker.io/gitea/gitea:1.27.3-rootless
+FROM docker.io/gitea/gitea:28.0.0-rootless
