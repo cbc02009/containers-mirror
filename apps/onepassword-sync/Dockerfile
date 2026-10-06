@@ -1,1 +1,1 @@
-FROM docker.io/1password/connect-sync:1.8.2
+FROM docker.io/1password/connect-sync:1.8.3
