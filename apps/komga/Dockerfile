@@ -1,1 +1,1 @@
-FROM docker.io/gotson/komga:1.30.1@sha256:d43bb3b57aeeafd274ea805214f5da71ff9306accf012fb14cc13dedc3307212
+FROM docker.io/gotson/komga:1.30.2@sha256:e4198a0d529d2be70bee5012484538154897c2d3071043b133bdaeacb806444e
